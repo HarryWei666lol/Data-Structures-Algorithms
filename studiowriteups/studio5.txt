@@ -1,0 +1,83 @@
+Studio 5 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1. Harry Wei
+2. Bobby Chen
+3.
+4.
+5.
+6.
+
+Master Method: For each problem:
+
+If the Master Theorem applies, state which case applies and the solution to the recurrence according to the theorem.
+If the Master Theorem does not apply, state why.
+
+1. case 3, theta(n^2)
+
+
+2. case 2, theta(n^2*log(n))
+
+
+3. case 3, theta(2^n)
+
+
+4. case 2, theta(n^n*log(n))
+
+
+5. case 1, theta(n^2)
+
+
+6. case 2, theta(n*log(n))
+
+
+7. case 2, theta(n*log(n))
+
+
+8. case 3, theta(n^0.51)
+
+
+9. exception, a = 1/2 < 1, a must be >= 1
+
+
+10. case 3, theta(n!)
+
+
+11. case 1, theta(n^(1/2))
+
+
+12. case 1, theta(n^log(2,3))
+
+
+13. case 1, theta(n)
+
+
+14. case 1, theta(n^2)
+
+
+15. case 3, theta(n*log(n))
+
+
+16. case 2, theta(n*log(n))
+
+
+17. case 3, theta(n^2*log(n))
+
+
+18. case 1, theta(n^2)
+
+
+19. exception: f(n) < 0
+
+
+20. case 3, theta(n^2)
+
+
+21. case 1, theta(n^2)

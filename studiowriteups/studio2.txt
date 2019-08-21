@@ -1,0 +1,42 @@
+Studio 2 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1. Harry Wei
+2.
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Part A
+1) What do you see in the plots for ticks and time?
+Ans: The plots show a quadratic relationship 
+
+2) How would you characterize those curves?
+Ans: These curves show a polynomial relationship(quadratic is a subset of polynomial)
+3) Based on the current code for addLast, why do you see this behavior?
+Ans: Because to append(add as an attachment) to a list consisting of n items , each time, we have to go through the whole LinkedList until the last element and then add the element, so the asymptotic complexity is n^2.
+
+Part B
+4) What behavior do you see now for appending n items to a list if you use a tail reference?
+Ans: It shows a linear relationship instead
+5) While we have reasoned so far only about time, if we are adding n elements to the end of a list, what is the asymptotic complexity of the additional space required when using the tail reference?
+Ans: the asymptotic complexity becomes linear, n , because we are just adding a node while adding the element
+6) Under what conditions would you recommend using a linked list with a tail reference vs. a linked list without a tail reference?
+Ans: Use a linked list with a tail reference when you want to directly add an element at the end of the LinkedList, after the current tail
+     and use a linked list without a tail reference when you can add an element at the start of the list, not necessarily at the end
+
+Part C
+7) Why does getSize() take the time it does?
+Ans: Because the time is too small to be rounded.
+8) How did you achieve Θ(1) (constant time) performance for getSize()?
+Ans: Removing the for loop and add a new instance variable of type "int" called size, and size++ and getSize() will return the size of the LinkedList while taking constant time 

@@ -1,0 +1,120 @@
+Studio 8 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.Harry Wei     455145
+2.Bobby Chen    451980
+3.
+4.
+5.
+6.
+
+
+What distribution do you see plotted (in the histogram or an XY Scatter plot) for Color hashcodes?
+Ans: Uniform distribution
+
+If the distribution were not uniform, what would the plot look like?
+Ans: the plot would be skewed.
+
+How many Color objects are added to the set?
+Ans:3
+How many objects are contained in the set after all Color objects are added?
+Ans:2
+Why are the above two numbers different?
+Ans: there are 2 same objects which both represent black color
+
+
+Are the Point objects' hash values distributed uniformly?
+Ans:Yes, distributed uniformly.
+
+How many Point objects are added to the set?
+Ans:2
+
+How many Point objects are in the set after all Point objects are added?
+Ans:2
+
+What is wrong with this result?
+Ans: the hashcode and equals in Point.java gives a random number, making same number different under comparison.
+
+Based on the code you see in Point, how is equality determined between two Point objects?
+Ans: Even though these Point objects are equal, the hash code generated for each Point object 
+is determined by a random integer. This means that 2 independently declared Point objects that
+have the same x and y coordinates will very likely have different hash codes.
+
+Looking at the output in the console window, how does the implementation of hashCode() for Point explain the bad behavior in the set of Points?
+Ans: Although they are essentially the same object, their hash code generated are different, making them different, so both same objects are added into the hashset
+
+How well does your hash function fare in terms of uniformly distributed hash values for the random point objects?
+Ans: Use of Chinese remainder theorem ensures the hash code generated are evenly distributed.
+
+
+As a team, try out some ideas for Pancake's hashCode() implementation. Record your best idea in the studio8.txt file (here!):
+Ans:
+
+Based on the hashCode() implementation shown to you on the web page, answer the following questions:
+
+If two Pancake objects equal each other, will they get the same hashCode() results?
+Ans: Yes
+
+How good of a job does the implementation do of obtaining uniform distributions of hashCode() values for two Pancake objects that do not equal each other?
+Ans: It does a great job
+
+Just by inspection of the hashCode() method on the web page, state two Pancakes that are different yet have the same hashCode() value.
+Ans:  The code is perfect
+
+Your best hashCode() for Pancake (paste the method here please):
+		int result;
+		if(wheat) {
+			result = (int) ((Math.pow(radius, 3)) +4);
+		}
+		else {
+			result = (int)(Math.pow(radius, 4))+4;
+		}
+
+
+
+
+Do your hashCode() values for Pancake appear to be uniformly distributed?
+Ans: Yes
+
+
+
+Your implementation of Syrup's hashCode() -- paste here:
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((brand == null) ? 0 : brand.hashCode());
+		long temp;
+		temp = Double.doubleToLongBits(density);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = prime * result + ((rand == null) ? 0 : rand.hashCode());
+		return result;
+
+
+
+
+
+
+How uniformly distributed are your Syrup hashCode() values?
+Ans: Very uniform
+
+
+How uniformly distributed are your PancakeAndSyrup hashCode() values?
+Ans: uniformly distributed
+
+
+
+
+
+
+
+
+
+
+
+

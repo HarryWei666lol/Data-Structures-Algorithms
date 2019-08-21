@@ -1,0 +1,79 @@
+Studio 3 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1. Harry Wei    455145
+2. Bobby Chen   451980
+3. Will Zhao    456674
+4. Jessica Wu   455730
+5.
+6.
+
+
+Part A
+
+What are three data types that can serve as T?
+Ans: int,double, boolean
+Which class did you pick to examine its compareTo method?
+Ans: Year
+How did its compareTo method impose a natural order on that class's instances?
+Ans: The compareTo method use the difference between the 2 inputed value of class Year and return zero if both values of year are the same
+Part B
+
+How does compareTo work?  Does it always return either -1, 0, or +1?
+Ans:The first and third lines are wrong but the second line is right. The difference between 2 values may be greater than 1 or less than -1
+Part C
+
+From your inspection of the LinkedList<T> class's source code:
+Given a LinkedList<T> of size n, what is the asymptotic complexity, worst-case, 
+for performing each of the following operations?
+
+  1)  Appending to the end of that list  addLast(..)
+  Ans: theta(1) because addLast has a tail reference by looking at its original code
+  2)  Prepending to the beginning of that list   addFirst(...)
+  Ans: theta(1) because addLast has a head reference
+  3)  Inserting an element in the middle of the list  add(size/2, .....)
+  Ans: big O(n) because there is no middle reference so we have to go through the whole list
+And for your implementation of a PriorityQueue using the Unordered List, 
+given n elements already in the queue, what is the asymptotic complexity, 
+worst-case for performing each of the following operations?
+  
+  4)  extractMin
+  Ans: big O(n)
+  5)  insert
+  Ans: big O(1)
+  6)  isEmpty
+  Ans: big O(1)
+  
+Part D
+
+From your implementation of OrderedArray, what is the asymptotic complexity, worst-case, for performing each of the following operations?
+
+  1)  Adding an element at the end of the array
+  Ans: Big O(1) 
+  
+  2)  Inserting an element at the beginning of the array
+  Ans: Big O(n) because we have to push every elements backwards by 1 unit
+  
+  3)  Inserting an element in the middle of the list
+  Ans: Big O(n) because we have to push half of the elements backwards by 1 unit
+And for your implementation of a PriorityQueue using the Ordered Array, 
+given n elements already in the queue, what is the asymptotic complexity, 
+worst-case for performing each of the following operations?
+  
+  4)  extractMin
+  Ans: Big O(1)
+  5)  insert
+  Ans: Big O(n)
+  6)  isEmpty
+  Ans: Big O(1)
+ 
+ Are there situations when you would want to use the OrderedArray or the UnorderedList instead of
+ the binary heap described in class?   Explain please.
+ Ans: extract min many times and arrange in sequence, use OrderedArray; if add many times, use UnorderedList.

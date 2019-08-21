@@ -1,0 +1,52 @@
+Studio 9 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+Review from Studio 8 
+
+Based on your knowledge of hash tables now, what do you expect to happen when you run PointSet.java? Why? 
+Ans: PointSet.java use the codes in equals to check if the added elements are same. So, commenting them out would make the hash function unable to check duplicity.
+
+Division Method 
+
+Try running the DivisionHash.java file several times, varying the number of buckets used by changing the argument to the DivisionHash constructor in the main method. Try at least one even number, odd number, and prime number less than 20, then try at least one even, odd, and prime near 100. What behavior do you observe? What explains this behavior?
+Based on your observations, what types of values are good for the number of buckets?
+Ans: For an even number below 20 e.g. 18, worst, not evenly distributed, some bucket has no number & corresponding hash, buckets with elements have unequal number of hashes
+     For an odd number below 20,e.g. 15, slightly better, all buckets have numbers but some buckets have more numbers than other buckets
+     For a prime below 20, e.g. 17, best, evenly distributed, all buckets have same number of elements as long as there are more elements than bucket numbers
+     For an even number below 100, e.g. 98, worst, not evenly distributed, some bucket has no number & corresponding hash, buckets with elements have unequal number of hashes
+     For an odd number below 100,e.g. 99, slightly better, all buckets have numbers but some buckets have more numbers than other buckets
+     For a prime below 100,e.g. 97 best, evenly distributed, all buckets have same number of elements as long as there are more elements than bucket numbers
+Conclusion: even number results in a lot of collision, prime number is a good value.
+
+
+Identify what this statement is doing and confirm your answer with your group. Then, modify this statement so that it generates a different set of numbers. What do you observe now when you run the code? Repeat this experiment with different values added to the hash set and different numbers of buckets in the set.
+Ans: while division method makes for a very straightforward and easy to implement hash functions, it is not reliable in distributing objects among buckets.
+
+
+
+Multiplication Method 
+
+Modify this loop so that it generates different sets of values, and run the code with each set (including the original). What do you observe? What does this tell you about the multiplication method?
+Ans: No matter how you change the value in the loop, the distribution is always very even
+
+
+Use the multiplication method to figure out which bucket each object gets placed in, assuming the hash set has 10 buckets. A calculator will be helpful for this section.
+Ans:1) bucket 2
+    2) bucket 4
+    3) bucket 6
+    4) bucket 0
+    5) bucket 6

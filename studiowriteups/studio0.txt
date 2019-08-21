@@ -1,0 +1,106 @@
+Your TA's name:
+Harry 
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.Harry Wei
+2.Bobby Chen
+3.Jessica Wu
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1: 
+	What do you see in both plots? 
+	Ans:Both depict a positive relationship between 2 variables
+	Are there any differences between the two? 
+	Ans:The first one depicts a linear relationship while the second one depicts a quadratic relationship.
+	What could account for those differences? 
+	Ans:There is only one for loop in linear.java file so ticker.tick() will be run just n times while there is a for loop nested in the outer for loop in quadratic.java file so the ticker.tick() will be run n^2 times
+	
+Discuss this (and all your responses for this assignment) with your TA as you go.
+
+Question A2:
+	Why do the times provided for Quadratic produce such a nice plot, while the original values of Linear did not?
+	Ans: For quadratic plot, the time taken is much longer than that taken by linear plot so the difference in time taken is much more visible on scatterplot.
+	     For linear plot, the times taken are very short and hence are rounded mostly to 0. Thus, the difference in time cannot be depicted on the scatterplot.
+Question A3: 
+	From the runs you have tried so far, how does the placement of ticker.tick() calls affect the plots you see? 
+	In particular, do the changes affect the shapes of the curves, the values plotted, or both
+	The placement of any number of ticker.tick() at any position does not affect the scatterplot at all. The shapes, the values plotted are both unaffected.
+Question A4: 
+	In terms of n, how would you characterize, in the most simple terms, 
+	the time and ticks curves that have been generated so far?
+	Ans: Linear = n & Quadratic = n^2 regardless of whether n is plotted against tick or time 
+		
+Question A5: 
+	What would happen if you deleted all ticker.tick() calls in the innermost loop,
+	while leaving other calls to ticker.tick() that you just placed in run()?
+	Ans: After deleting all ticker.tick() calls in the innermost loop, the quadratic.tick scatterplot shows a linear relationship while a quadratic relationship was there before deletion. 
+	     The quadratic.time scatterplot did not change at all
+Question B1:
+	What do you see? How do the curves reflect the code inside AddsTwoNumbers?
+	Do you think the value of n matters here in terms of the time it takes to perform the operation?
+	Why or why not?
+	Ans: For AddsTwoNumbers.tick, there is a positive horizontal curve while for AddsTwoNumbers.time, there is not a distinct relationship 
+	     The value of n does not affect AddsTwoNumbers.tick because whatever n is, the tick is always the same value. It just take 1 tick for the computer to realize the 2 numbers
+	     However, n affects AddsTwoNumbers.time because the magnitude of n affects how long the computer need to decipher it
+	
+Question B2:
+	What do the data and plot tell you about the time it takes to allocate an array of n integers?
+	Is it reasonable to say that the line of code
+
+ 		this.array = new int[this.n]
+ 		
+	takes a constant amount of time, independent of the value of this.n?
+	Ans: There is a roughly linear relationship for allocates.time scatterplot except at extremely small numbers of n.
+	     Hence, it is not reasonable to assume that it takes a constant amount of time. Time is not completely independent of n
+	
+Question B3:
+	Do the ticks agree in shape with the time we measured in running the Allocates code?
+	Ans: No, it is still a horizontal line which is different from allocates.time scatterplot.
+Question B4:
+	Are the plots more similar to each other than before?
+	What does this tell you about how much time it takes to allocate an array of n integers?
+	Ans: The plots become more similar to each other than before.
+	     Thus, it takes roughly n number of ticks or times to allocate an array of n integers. Thus, it is a linear relationship
+	
+Question B5:
+	Which group do you expect to finish first?
+	Can you formalize, in terms of n the amount of work (ticks)
+	that each group must do to write n in the form required for that group?
+
+	Both groups achieve the same result, namely the recording of an integer n.
+
+		Under what circumstances is the decimal notation more efficient than tally marks?
+		Under what circumstances is the tally mark notation more efficient than decimal notation?
+		
+		If you are not sure, take a look the link from the assignment web page.
+		
+		Ans:When you just want to write down a number say 11, 110, decimal notation is more efficient than tally marks
+		    When you want to go from say 30 to 31 such that the difference is small like 1, tally marks is going be faster because all you have to do is to draw another stroke.
+		
+	
+Question D1:
+	How would you describe the curve you see?
+	As a team, think about possible polynomial functions that could generate such a curve.
+	Write your answer here:
+	Ans: The curve depicts a quadratic relationship when ticks is plotted against n
+	     y=x^2
+	
+Question E1:
+	What is the closed form solution for T(n)?
+	Ans:T(n) = n + (n-1) + (n-2)+...+1=(n^2+n)/2
+	
+	
+Question E2:
+	What is the closed form solution for T(n)?
+	Can you express this result in terms of n, as well as k?
+	Ans: T(n) = 2^(k-1)-1
+	
+	

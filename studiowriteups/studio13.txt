@@ -1,0 +1,68 @@
+Studio 11 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+
+Part 1. Introduction
+
+
+1. Give your own definition for what a crypographic key is 
+Ans: A cryptographic key is a piece of information that determines functional output of a cryptographic algorithm. For encryption algorithms, 
+a key specifies the transformation of plaintext into ciphertext, and vice versa for decryption algorithms. Encryption and decryption parameter
+2. Explain the differences between public, private, and shared keys 
+Ans: available to everyone, end user, a private key multiple users use.
+3. Is Diffie-Hellmann an encryption algorithm? **
+Ans: No! It is a key exchange algorithm for exchanging symmetric keys.
+4. Encryption is often confused with hashing, can you think of a reason why? what is the main difference? 
+Ans:  They both take in a string and return some jumbled transformation of the message. The main difference is encryption can be reversed but hashing cannot be reversed.
+5. bonus: should passwords be hashed or encrypted before they are stored in a database? why? 
+Ans:Passwords should be hashed because we don't want to reverse it
+
+Part 2. Caesar Ciphers
+
+
+For the following messages and keys, give the output of the caesar encryption:
+
+1.Ans: hfy
+
+2.Ans: cheud
+
+3.Ans: pas
+
+for the following message/encrypted message pairs, give the key
+
+1. Ans:7
+
+2. Ans:5
+
+3. Ans:15
+
+
+Part 3. Diffie-Hellmann Key Exchanges
+
+
+before starting make sure you are able to answer the following questions:
+
+1. what values must be agreed upon by both parties beforehand? 
+Ans: base,g ; modulus,p
+2. how many private keys are used? 
+Ans: each side create one secret number
+3. what is the equation to calculate the public keys?
+Ans: g^secret (mod p)
+4. what the equation to produce the final shared keys? 
+Ans:other public key^(my own private key) (mod p)
+5. how many of the secret numbers need to be known in order to crack the algorithm? 
+Ans: Just one, either one can be used to find the shared key

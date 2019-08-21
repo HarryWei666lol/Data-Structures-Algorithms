@@ -1,0 +1,409 @@
+-------------------
+CSE247 Robot tester starts testing AVLTree on 2018-05-02 15:23:47 -0500
+
+========
+Testing in ./GradingRepos/repos/cse247-s18-students-wei.xianda: AVLTree as of 2018-04-26 00:05
+========
+Now in: /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-wei.xianda
+Your branch is up-to-date with 'origin/master'.
+HEAD is now at 4060812 robograde
+No local changes to save
+
+Updating 4060812..a85962b
+Fast-forward
+ RoboGrade/AVLTree-test.TestUnbalancedTree.txt | 509 ++++++++++++++++++++++++++
+ labs/AVLTree/test/TestUnbalancedTree.java     |  19 +
+ 2 files changed, 528 insertions(+)
+ create mode 100644 RoboGrade/AVLTree-test.TestUnbalancedTree.txt
+Going back in time to: 2018-04-26 00:05
+At hash 4e1142f26931f04af7b3d82c2d2d97827b076152
+
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+copytest:
+     [echo] would copy from /Users/puneetsachdeva/git/cse247-s18-students key wei.xianda testfilesource test/TestBalancedTree package AVLTree repo ./GradingRepos/repos/cse247-s18-students-wei.xianda
+     [copy] Copying 1 file to /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-wei.xianda/labs/AVLTree/test
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+compile:
+     [echo] Compiling AVLTree/trees/AVLTree
+    [mkdir] Created dir: /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-wei.xianda/bin
+    [javac] Compiling 1 source file to /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-wei.xianda/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+compile:
+     [echo] Compiling AVLTree/nodes/AVLTreeNode
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+compile:
+     [echo] Compiling AVLTree/test/TestBalancedTree
+    [javac] Compiling 1 source file to /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-wei.xianda/bin
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Running test test.TestBalancedTree
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+test:
+    [junit] Running AVLTree.test.TestBalancedTree
+    [junit] Testsuite: AVLTree.test.TestBalancedTree
+    [junit] Testing unique size 0
+    [junit] done
+    [junit] Testing unique size 1
+    [junit] done
+    [junit] Testing unique size 2
+    [junit] done
+    [junit] Testing unique size 3
+    [junit] done
+    [junit] Testing unique size 4
+    [junit] done
+    [junit] Testing unique size 5
+    [junit] done
+    [junit] Testing unique size 6
+    [junit] done
+    [junit] Testing unique size 7
+    [junit] done
+    [junit] Testing unique size 8
+    [junit] done
+    [junit] Testing unique size 9
+    [junit] done
+    [junit] Testing with duplicates size 0
+    [junit] done
+    [junit] Testing with duplicates size 1
+    [junit] done
+    [junit] Testing with duplicates size 2
+    [junit] done
+    [junit] Testing with duplicates size 3
+    [junit] done
+    [junit] Testing with duplicates size 4
+    [junit] done
+    [junit] Testing with duplicates size 5
+    [junit] done
+    [junit] Testing with duplicates size 6
+    [junit] done
+    [junit] Testing with duplicates size 7
+    [junit] done
+    [junit] Testing with duplicates size 8
+    [junit] done
+    [junit] Testing with duplicates size 9
+    [junit] done
+    [junit] Displaying a correct Tree of 50 unique integers:
+    [junit] Root-27
+    [junit] |  L-12
+    [junit] |  |  L-4
+    [junit] |  |  |  L-2
+    [junit] |  |  |  |  L-0
+    [junit] |  |  |  |  |  R-1
+    [junit] |  |  |  |  R-3
+    [junit] |  |  |  R-7
+    [junit] |  |  |  |  L-6
+    [junit] |  |  |  |  |  L-5
+    [junit] |  |  |  |  R-9
+    [junit] |  |  |  |  |  L-8
+    [junit] |  |  |  |  |  R-11
+    [junit] |  |  |  |  |  |  L-10
+    [junit] |  |  R-17
+    [junit] |  |  |  L-15
+    [junit] |  |  |  |  L-13
+    [junit] |  |  |  |  |  R-14
+    [junit] |  |  |  |  R-16
+    [junit] |  |  |  R-23
+    [junit] |  |  |  |  L-21
+    [junit] |  |  |  |  |  L-19
+    [junit] |  |  |  |  |  |  L-18
+    [junit] |  |  |  |  |  |  R-20
+    [junit] |  |  |  |  |  R-22
+    [junit] |  |  |  |  R-25
+    [junit] |  |  |  |  |  L-24
+    [junit] |  |  |  |  |  R-26
+    [junit] |  R-42
+    [junit] |  |  L-34
+    [junit] |  |  |  L-30
+    [junit] |  |  |  |  L-28
+    [junit] |  |  |  |  |  R-29
+    [junit] |  |  |  |  R-32
+    [junit] |  |  |  |  |  L-31
+    [junit] |  |  |  |  |  R-33
+    [junit] |  |  |  R-38
+    [junit] |  |  |  |  L-36
+    [junit] |  |  |  |  |  L-35
+    [junit] |  |  |  |  |  R-37
+    [junit] |  |  |  |  R-40
+    [junit] |  |  |  |  |  L-39
+    [junit] |  |  |  |  |  R-41
+    [junit] |  |  R-45
+    [junit] |  |  |  L-44
+    [junit] |  |  |  |  L-43
+    [junit] |  |  |  R-47
+    [junit] |  |  |  |  L-46
+    [junit] |  |  |  |  R-49
+    [junit] |  |  |  |  |  L-48
+    [junit] 
+    [junit] Final Tree:
+    [junit] Root-100
+    [junit] |  L-50
+    [junit] |  |  L-25
+    [junit] |  |  |  L-10
+    [junit] |  |  |  R-30
+    [junit] |  |  R-75
+    [junit] |  |  |  L-60
+    [junit] |  |  |  R-90
+    [junit] |  R-150
+    [junit] |  |  L-125
+    [junit] |  |  |  L-110
+    [junit] |  |  |  R-130
+    [junit] |  |  R-175
+    [junit] |  |  |  L-160
+    [junit] |  |  |  R-190
+    [junit] 
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec
+    [junit] Output:
+    [junit] Testing unique size 0
+    [junit] done
+    [junit] Testing unique size 1
+    [junit] done
+    [junit] Testing unique size 2
+    [junit] done
+    [junit] Testing unique size 3
+    [junit] done
+    [junit] Testing unique size 4
+    [junit] done
+    [junit] Testing unique size 5
+    [junit] done
+    [junit] Testing unique size 6
+    [junit] done
+    [junit] Testing unique size 7
+    [junit] done
+    [junit] Testing unique size 8
+    [junit] done
+    [junit] Testing unique size 9
+    [junit] done
+    [junit] Testing with duplicates size 0
+    [junit] done
+    [junit] Testing with duplicates size 1
+    [junit] done
+    [junit] Testing with duplicates size 2
+    [junit] done
+    [junit] Testing with duplicates size 3
+    [junit] done
+    [junit] Testing with duplicates size 4
+    [junit] done
+    [junit] Testing with duplicates size 5
+    [junit] done
+    [junit] Testing with duplicates size 6
+    [junit] done
+    [junit] Testing with duplicates size 7
+    [junit] done
+    [junit] Testing with duplicates size 8
+    [junit] done
+    [junit] Testing with duplicates size 9
+    [junit] done
+    [junit] Displaying a correct Tree of 50 unique integers:
+    [junit] Root-27
+    [junit] |  L-12
+    [junit] |  |  L-4
+    [junit] |  |  |  L-2
+    [junit] |  |  |  |  L-0
+    [junit] |  |  |  |  |  R-1
+    [junit] |  |  |  |  R-3
+    [junit] |  |  |  R-7
+    [junit] |  |  |  |  L-6
+    [junit] |  |  |  |  |  L-5
+    [junit] |  |  |  |  R-9
+    [junit] |  |  |  |  |  L-8
+    [junit] |  |  |  |  |  R-11
+    [junit] |  |  |  |  |  |  L-10
+    [junit] |  |  R-17
+    [junit] |  |  |  L-15
+    [junit] |  |  |  |  L-13
+    [junit] |  |  |  |  |  R-14
+    [junit] |  |  |  |  R-16
+    [junit] |  |  |  R-23
+    [junit] |  |  |  |  L-21
+    [junit] |  |  |  |  |  L-19
+    [junit] |  |  |  |  |  |  L-18
+    [junit] |  |  |  |  |  |  R-20
+    [junit] |  |  |  |  |  R-22
+    [junit] |  |  |  |  R-25
+    [junit] |  |  |  |  |  L-24
+    [junit] |  |  |  |  |  R-26
+    [junit] |  R-42
+    [junit] |  |  L-34
+    [junit] |  |  |  L-30
+    [junit] |  |  |  |  L-28
+    [junit] |  |  |  |  |  R-29
+    [junit] |  |  |  |  R-32
+    [junit] |  |  |  |  |  L-31
+    [junit] |  |  |  |  |  R-33
+    [junit] |  |  |  R-38
+    [junit] |  |  |  |  L-36
+    [junit] |  |  |  |  |  L-35
+    [junit] |  |  |  |  |  R-37
+    [junit] |  |  |  |  R-40
+    [junit] |  |  |  |  |  L-39
+    [junit] |  |  |  |  |  R-41
+    [junit] |  |  R-45
+    [junit] |  |  |  L-44
+    [junit] |  |  |  |  L-43
+    [junit] |  |  |  R-47
+    [junit] |  |  |  |  L-46
+    [junit] |  |  |  |  R-49
+    [junit] |  |  |  |  |  L-48
+    [junit] 
+    [junit] Final Tree:
+    [junit] Root-100
+    [junit] |  L-50
+    [junit] |  |  L-25
+    [junit] |  |  |  L-10
+    [junit] |  |  |  R-30
+    [junit] |  |  R-75
+    [junit] |  |  |  L-60
+    [junit] |  |  |  R-90
+    [junit] |  R-150
+    [junit] |  |  L-125
+    [junit] |  |  |  L-110
+    [junit] |  |  |  R-130
+    [junit] |  |  R-175
+    [junit] |  |  |  L-160
+    [junit] |  |  |  R-190
+    [junit] 
+    [junit] 
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] Testing unique size 0
+    [junit] done
+    [junit] Testing unique size 1
+    [junit] done
+    [junit] Testing unique size 2
+    [junit] done
+    [junit] Testing unique size 3
+    [junit] done
+    [junit] Testing unique size 4
+    [junit] done
+    [junit] Testing unique size 5
+    [junit] done
+    [junit] Testing unique size 6
+    [junit] done
+    [junit] Testing unique size 7
+    [junit] done
+    [junit] Testing unique size 8
+    [junit] done
+    [junit] Testing unique size 9
+    [junit] done
+    [junit] Testing with duplicates size 0
+    [junit] done
+    [junit] Testing with duplicates size 1
+    [junit] done
+    [junit] Testing with duplicates size 2
+    [junit] done
+    [junit] Testing with duplicates size 3
+    [junit] done
+    [junit] Testing with duplicates size 4
+    [junit] done
+    [junit] Testing with duplicates size 5
+    [junit] done
+    [junit] Testing with duplicates size 6
+    [junit] done
+    [junit] Testing with duplicates size 7
+    [junit] done
+    [junit] Testing with duplicates size 8
+    [junit] done
+    [junit] Testing with duplicates size 9
+    [junit] done
+    [junit] Displaying a correct Tree of 50 unique integers:
+    [junit] Root-27
+    [junit] |  L-12
+    [junit] |  |  L-4
+    [junit] |  |  |  L-2
+    [junit] |  |  |  |  L-0
+    [junit] |  |  |  |  |  R-1
+    [junit] |  |  |  |  R-3
+    [junit] |  |  |  R-7
+    [junit] |  |  |  |  L-6
+    [junit] |  |  |  |  |  L-5
+    [junit] |  |  |  |  R-9
+    [junit] |  |  |  |  |  L-8
+    [junit] |  |  |  |  |  R-11
+    [junit] |  |  |  |  |  |  L-10
+    [junit] |  |  R-17
+    [junit] |  |  |  L-15
+    [junit] |  |  |  |  L-13
+    [junit] |  |  |  |  |  R-14
+    [junit] |  |  |  |  R-16
+    [junit] |  |  |  R-23
+    [junit] |  |  |  |  L-21
+    [junit] |  |  |  |  |  L-19
+    [junit] |  |  |  |  |  |  L-18
+    [junit] |  |  |  |  |  |  R-20
+    [junit] |  |  |  |  |  R-22
+    [junit] |  |  |  |  R-25
+    [junit] |  |  |  |  |  L-24
+    [junit] |  |  |  |  |  R-26
+    [junit] |  R-42
+    [junit] |  |  L-34
+    [junit] |  |  |  L-30
+    [junit] |  |  |  |  L-28
+    [junit] |  |  |  |  |  R-29
+    [junit] |  |  |  |  R-32
+    [junit] |  |  |  |  |  L-31
+    [junit] |  |  |  |  |  R-33
+    [junit] |  |  |  R-38
+    [junit] |  |  |  |  L-36
+    [junit] |  |  |  |  |  L-35
+    [junit] |  |  |  |  |  R-37
+    [junit] |  |  |  |  R-40
+    [junit] |  |  |  |  |  L-39
+    [junit] |  |  |  |  |  R-41
+    [junit] |  |  R-45
+    [junit] |  |  |  L-44
+    [junit] |  |  |  |  L-43
+    [junit] |  |  |  R-47
+    [junit] |  |  |  |  L-46
+    [junit] |  |  |  |  R-49
+    [junit] |  |  |  |  |  L-48
+    [junit] 
+    [junit] Final Tree:
+    [junit] Root-100
+    [junit] |  L-50
+    [junit] |  |  L-25
+    [junit] |  |  |  L-10
+    [junit] |  |  |  R-30
+    [junit] |  |  R-75
+    [junit] |  |  |  L-60
+    [junit] |  |  |  R-90
+    [junit] |  R-150
+    [junit] |  |  L-125
+    [junit] |  |  |  L-110
+    [junit] |  |  |  R-130
+    [junit] |  |  R-175
+    [junit] |  |  |  L-160
+    [junit] |  |  |  R-190
+    [junit] 
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: testViaSorting took 0.068 sec
+    [junit] Testcase: testEmptyHeap took 0 sec
+    [junit] Testcase: testAllRebalanceCases took 0 sec
+    [junit] Testcase: testAndPrint took 0.013 sec
+    [junit] Testcase: testInsertWithoutRebalance took 0.011 sec
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+================
+Lab is counted as working
+================
+
+CSE247 Robot tester ends testing AVLTree on 2018-05-02 15:23:53 -0500
+-------------------

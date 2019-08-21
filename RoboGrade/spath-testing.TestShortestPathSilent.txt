@@ -1,0 +1,88 @@
+-------------------
+CSE247 Robot tester starts testing spath on 2018-04-07 13:12:59 -0500
+
+========
+Testing in ./GradingRepos/repos/cse247-s18-students-wei.xianda: spath as of 2018-03-08 00:05
+========
+Now in: /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-wei.xianda
+Your branch is up-to-date with 'origin/master'.
+HEAD is now at 68135a2 robograde
+No local changes to save
+
+Updating 68135a2..10afe91
+Fast-forward
+ RoboGrade/kwaymergesort-test.TestMergeSort.txt    | 200 ++++--------
+ lecture/lecture10/simons18/OrderSet247.java       | 137 ++++++++
+ lecture/lecture10/simons18/TreeNode.java          |  21 ++
+ outputs/sortusingbst-ticks0.csv                   | 100 ++++++
+ outputs/sortusingbst-ticks1.csv                   | 100 ++++++
+ outputs/sortusingbst-time0.csv                    | 100 ++++++
+ outputs/sortusingbst-time1.csv                    | 100 ++++++
+ outputs/sortusingunorderedlist-ticks0.csv         | 100 ++++++
+ outputs/sortusingunorderedlist-time0.csv          | 100 ++++++
+ studios/studio10/BST.java                         | 363 ++++++++++++++++++++++
+ studios/studio10/SortedSetUsingBST.java           |  66 ++++
+ studios/studio10/SortedSetUsingUnorderedList.java |  67 ++++
+ studios/studio10/TreeNode.java                    |  27 ++
+ studiowriteups/studio10.txt                       |  22 +-
+ 14 files changed, 1348 insertions(+), 155 deletions(-)
+ create mode 100644 lecture/lecture10/simons18/OrderSet247.java
+ create mode 100644 lecture/lecture10/simons18/TreeNode.java
+ create mode 100644 outputs/sortusingbst-ticks0.csv
+ create mode 100644 outputs/sortusingbst-ticks1.csv
+ create mode 100644 outputs/sortusingbst-time0.csv
+ create mode 100644 outputs/sortusingbst-time1.csv
+ create mode 100644 outputs/sortusingunorderedlist-ticks0.csv
+ create mode 100644 outputs/sortusingunorderedlist-time0.csv
+ create mode 100644 studios/studio10/BST.java
+ create mode 100644 studios/studio10/SortedSetUsingBST.java
+ create mode 100644 studios/studio10/SortedSetUsingUnorderedList.java
+ create mode 100644 studios/studio10/TreeNode.java
+Going back in time to: 2018-03-08 00:05
+At hash 2a3a6ed33e51c1d577dcd06f153e7e8744f40827
+
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+copytest:
+     [echo] would copy from /Users/puneetsachdeva/git/cse247-s18-students key wei.xianda testfilesource testing/TestShortestPathSilent package spath repo ./GradingRepos/repos/cse247-s18-students-wei.xianda
+     [copy] Copying 1 file to /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-wei.xianda/labs/spath/testing
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+compile:
+     [echo] Compiling spath/ShortestPaths
+    [mkdir] Created dir: /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-wei.xianda/bin
+    [javac] Compiling 1 source file to /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-wei.xianda/bin
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+compile:
+     [echo] Compiling spath/testing/TestShortestPathSilent
+    [javac] Compiling 1 source file to /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-wei.xianda/bin
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Running test testing.TestShortestPathSilent
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+test:
+    [junit] Running spath.testing.TestShortestPathSilent
+    [junit] Testsuite: spath.testing.TestShortestPathSilent
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.571 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.571 sec
+    [junit] 
+    [junit] Testcase: test took 4.546 sec
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+================
+Lab is counted as working
+================
+
+CSE247 Robot tester ends testing spath on 2018-04-07 13:13:11 -0500
+-------------------
